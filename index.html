@@ -275,42 +275,7 @@
   </div>
 </div>
 
-<!-- MODAL: Paramètres -->
-<div class="modal-overlay" id="modal-settings">
-  <div class="modal">
-    <div class="modal-title"><i class="ti ti-settings" style="color:var(--accent)"></i> Paramètres</div>
-    <div class="tabs">
-      <button class="tab active" onclick="switchTab('general')" id="tab-general">Général</button>
-      <button class="tab" onclick="switchTab('firebase')" id="tab-firebase"><i class="ti ti-database"></i> Firebase</button>
-    </div>
-    <div id="tab-content-general">
-      <div class="field"><label>Nom du foyer / utilisateur</label><input type="text" id="s-name" placeholder="Mon budget"></div>
-      <div class="field"><label>Devise</label>
-        <select id="s-currency">
-          <option value="EUR">€ Euro</option>
-          <option value="USD">$ Dollar</option>
-          <option value="CHF">CHF Franc suisse</option>
-          <option value="GBP">£ Livre sterling</option>
-          <option value="MAD">MAD Dirham marocain</option>
-        </select>
-      </div>
-      <div class="field"><label>Salaire / Revenus mensuels (€)</label><input type="number" id="s-income" placeholder="0.00" step="0.01"></div>
-    </div>
-    <div id="tab-content-firebase" style="display:none;">
-      <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;">Modifie ta configuration Firebase. La page se rechargera.</p>
-      <div class="field"><label>API Key</label><input type="text" id="s-apiKey"></div>
-      <div class="field"><label>Project ID</label><input type="text" id="s-projectId"></div>
-      <div class="field"><label>Auth Domain</label><input type="text" id="s-authDomain"></div>
-      <div class="field"><label>App ID</label><input type="text" id="s-appId"></div>
-      <div class="field"><label>Storage Bucket</label><input type="text" id="s-storageBucket"></div>
-      <div class="field"><label>Messaging Sender ID</label><input type="text" id="s-messagingSenderId"></div>
-    </div>
-    <div class="modal-actions">
-      <button class="btn" onclick="closeModal('settings')">Annuler</button>
-      <button class="btn btn-primary" onclick="saveSettings()"><i class="ti ti-check"></i> Enregistrer</button>
-    </div>
-  </div>
-</div>
+
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
