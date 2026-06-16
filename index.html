@@ -315,10 +315,12 @@
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, doc, getDocs, setDoc, deleteDoc, onSnapshot, query, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { Chart, registerables } from "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js";
+
+// ✅ CORRECTION ICI : esm.js au lieu de umd.js
+import { Chart, registerables } from "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.esm.js";
 Chart.register(...registerables);
 
-// ─── CONFIG FIREBASE (hardcodée) ──────────────────────────────────────────────
+// ─── CONFIG FIREBASE ──────────────────────────────────────────────────────────
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyDA8VWcVjmx7wT0dbTQndETGCqxuko_W24",
   authDomain: "suivicomptes.firebaseapp.com",
