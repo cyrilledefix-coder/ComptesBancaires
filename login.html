@@ -385,7 +385,7 @@ window.doLogin = async function() {
   const email = document.getElementById('login-email').value.trim();
   const password = document.getElementById('login-password').value;
   if (!email || !password) {
-    toast('error', 'Champs manquants', 'Remplis l'e-mail et le mot de passe.');
+    toast('error', 'Champs manquants', "Remplis l'e-mail et le mot de passe.");
     return;
   }
   setLoading('loginBtn', true);
